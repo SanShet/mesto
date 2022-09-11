@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto Russia</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="Логотип">
+
+    </header>
+    <main class="page">
+        <section class="profile">
+
+            <img class="profile__image" src="./images/jak.jpg" alt="Аватар">
+            <div class="profile-info">
+                <h1 class="profile__title">Жак-Ив Кусто</h1>
+                <h2 class="profile__subtitle">Исследователь океана</h2>
+                <button class="profile-info__edit-button" type="button">
+                </button>
+
+            </div>
+            <button class="profile__add-button"></button>
+        </section>
+        <section class=" gallery">
+            <div class="gallery__element">
+                <img class="gallery__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
+                <p class="gallery__text">Карачаевск</p>
+                <a class="gallery__heart" href="#"></a>
+
+
+
+            </div>
+
+            <div class="gallery__element">
+                <img class="gallery__image" src="./images/gora-elbrus.jpg" alt="Гора Эльбрус">
+                <p class="gallery__text">Гора Эльбрус</p>
+                <a class="gallery__heart" href="#"></a>
+
+
+
+            </div>
+
+            <div class="gallery__element">
+                <img class="gallery__image" src="./images/dombai.jpg" alt="Домбай">
+                <p class="gallery__text">Домбай</p>
+                <a class="gallery__heart" href="#"></a>
+
+
+
+            </div>
+
+            <div class="gallery__element">
+                <img class="gallery__image" src="./images/chelny.jpg" alt="Набережные Челны">
+                <p class="gallery__text">Набережные Челны</p>
+                <a class="gallery__heart" href="#"></a>
+
+
+
+            </div>
+
+            <div class="gallery__element">
+                <img class="gallery__image" src="./images/kazan1.jpg" alt="Казань">
+                <p class="gallery__text">Казань</p>
+                <a class="gallery__heart" href="#"></a>
+
+
+
+            </div>
+
+            <div class="gallery__element">
+                <img class="gallery__image" src="./images/moscow.jpg" alt="Москва">
+                <p class="gallery__text">Москва</p>
+                <a class="gallery__heart" href="#"></a>
+
+
+
+            </div>
+
+        </section>
+
+        <section class="popup">
+            <div class="popup__container">
+                <button class="popup__close-button"></button>
+                <form class="popup__form">
+                    <p class="popup__title">Редактировать профиль</p>
+
+                    <input class="popup__value" type="text" placeholder="Введите имя" id="popup-name"
+                        value="Жак-Ив Кусто">
+                    <input class="popup__value" type="text" placeholder="Введите должность" id="popup-job"
+                        value="Исследователь океана">
+
+
+                    <button class="popup__save-button">
+                        Сохранить
+                    </button>
+                </form>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <p class="footer__copyright">© 2022 Mesto Russia</p>
+
+        </footer>
+    </main>
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

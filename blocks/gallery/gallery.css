@@ -1,0 +1,20 @@
+.gallery {
+  padding: calc(50.25px / 2) 0 calc(67px / 2) 0;
+  display: grid;
+  grid-template-columns: repeat(3, fit-content(282px));
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 17px;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, fit-content(282px));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery {
+    grid-template-columns: fit-content(282px);
+  }
+}

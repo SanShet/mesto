@@ -1,0 +1,24 @@
+.profile {
+  max-width: 880px;
+  max-height: 120px;
+
+  padding: 40px 0 calc(47.25px / 2);
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  justify-items: flex-start;
+  align-items: center;
+  grid-template-areas: "image profile-info addbutton";
+}
+
+@media screen and (max-width: 1023px) {
+  .profile {
+    grid-template-areas:
+      "image"
+      "profile-info"
+      "addbutton";
+    grid-template-columns: 1fr;
+    padding: 42px 0 calc(36px / 2);
+    justify-items: center;
+    min-height: 286px;
+  }
+}

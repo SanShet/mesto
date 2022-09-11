@@ -1,0 +1,11 @@
+.gallery__heart {
+  background-image: url(../../../images/heart.svg);
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 19px;
+  display: inline-block;
+  grid-area: heart;
+  justify-self: end;
+  align-self: center;
+  margin-right: 20px;
+}
