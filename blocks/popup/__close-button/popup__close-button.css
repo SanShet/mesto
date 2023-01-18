@@ -1,7 +1,8 @@
 .popup__close-button {
   background-image: url(../../../images/closebut.svg);
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
+  background-position: center center;
   border: none;
   position: absolute;
   height: 32px;
@@ -13,4 +14,12 @@
 
 .popup__close-button:hover {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 767px) {
+  .popup__close-button {
+    width: 20px;
+    height: 20px;
+    right: 0;
+  }
 }

@@ -1,4 +1,4 @@
-.gallery__text {
+.card__text {
   font-size: 24px;
   font-weight: 900;
   line-height: 29.05px;
@@ -8,4 +8,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.h2 {
+  margin: 0;
+  padding: 0;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesto Russia</title>
+    <title>Место</title>
     <link rel="stylesheet" href="./pages/index.css">
 </head>
 
@@ -18,99 +18,97 @@
         <section class="profile">
 
             <img class="profile__image" src="./images/jak.jpg" alt="Аватар">
-            <div class="profile-info">
+            <div class="profile__info">
                 <h1 class="profile__title">Жак-Ив Кусто</h1>
                 <h2 class="profile__subtitle">Исследователь океана</h2>
-                <button class="profile-info__edit-button" type="button">
+                <button class="profile__edit-button" type="button">
                 </button>
 
             </div>
-            <button class="profile__add-button"></button>
+            <button class="profile__add-button" type="button"></button>
         </section>
         <section class=" gallery">
-            <div class="gallery__element">
-                <img class="gallery__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
-                <p class="gallery__text">Карачаевск</p>
-                <a class="gallery__heart" href="#"></a>
+            <div class="card">
+                <img class="card__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
+                <h2 class="card__text">Карачаевск</h2>
+                <button class="card__heart" type="button"></button>
 
 
 
             </div>
 
-            <div class="gallery__element">
-                <img class="gallery__image" src="./images/gora-elbrus.jpg" alt="Гора Эльбрус">
-                <p class="gallery__text">Гора Эльбрус</p>
-                <a class="gallery__heart" href="#"></a>
+            <div class="card">
+                <img class="card__image" src="./images/gora-elbrus.jpg" alt="Гора Эльбрус">
+                <h2 class="card__text">Гора Эльбрус</h2>
+                <button class="card__heart" type="button"></button>
 
 
 
             </div>
 
-            <div class="gallery__element">
-                <img class="gallery__image" src="./images/dombai.jpg" alt="Домбай">
-                <p class="gallery__text">Домбай</p>
-                <a class="gallery__heart" href="#"></a>
+            <div class="card">
+                <img class="card__image" src="./images/dombai.jpg" alt="Домбай">
+                <h2 class="card__text">Домбай</h2>
+                <button class="card__heart" type="button"></button>
 
 
 
             </div>
 
-            <div class="gallery__element">
-                <img class="gallery__image" src="./images/chelny.jpg" alt="Набережные Челны">
-                <p class="gallery__text">Набережные Челны</p>
-                <a class="gallery__heart" href="#"></a>
+            <div class="card">
+                <img class="card__image" src="./images/chelny.jpg" alt="Набережные Челны">
+                <h2 class="card__text">Набережные Челны</h2>
+                <button class="card__heart" type="button"></button>
 
 
 
             </div>
 
-            <div class="gallery__element">
-                <img class="gallery__image" src="./images/kazan1.jpg" alt="Казань">
-                <p class="gallery__text">Казань</p>
-                <a class="gallery__heart" href="#"></a>
+            <div class="card">
+                <img class="card__image" src="./images/kazan1.jpg" alt="Казань">
+                <h2 class="card__text">Казань</h2>
+                <button class="card__heart" type="button"></button>
 
 
 
             </div>
 
-            <div class="gallery__element">
-                <img class="gallery__image" src="./images/moscow.jpg" alt="Москва">
-                <p class="gallery__text">Москва</p>
-                <a class="gallery__heart" href="#"></a>
+            <div class="card">
+                <img class="card__image" src="./images/moscow.jpg" alt="Москва">
+                <h2 class="card__text">Москва</h2>
+                <button class="card__heart" type="button"></button>
 
 
 
-            </div>
-
-        </section>
-
-        <section class="popup">
-            <div class="popup__container">
-                <button class="popup__close-button"></button>
-                <form class="popup__form">
-                    <p class="popup__title">Редактировать профиль</p>
-
-                    <input class="popup__value" type="text" placeholder="Введите имя" id="popup-name"
-                        value="Жак-Ив Кусто">
-                    <input class="popup__value" type="text" placeholder="Введите должность" id="popup-job"
-                        value="Исследователь океана">
-
-
-                    <button class="popup__save-button">
-                        Сохранить
-                    </button>
-                </form>
             </div>
 
         </section>
 
-        <footer class="footer">
-            <p class="footer__copyright">© 2022 Mesto Russia</p>
-
-        </footer>
     </main>
+    <footer class="footer">
+        <p class="footer__copyright">© 2022 Mesto Russia</p>
 
-    <script src="./scripts/main.js"></script>
+    </footer>
+    <div class="popup">
+        <div class="popup__container">
+            <button class="popup__close-button" type="button"></button>
+            <h3 class="popup__title">Редактировать профиль</h3>
+            <form name="popupform" class="popup__form">
+
+
+                <input class="popup__value" type="text" placeholder="Введите имя" id="popup-name" value="" name="name">
+                <input class="popup__value" type="text" placeholder="Введите должность" id="popup-job" value=""
+                    name="job">
+
+
+                <button class="popup__save-button" type="submit">
+                    Сохранить
+                </button>
+            </form>
+        </div>
+
+    </div>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

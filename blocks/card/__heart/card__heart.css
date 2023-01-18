@@ -1,6 +1,9 @@
-.gallery__heart {
+.card__heart {
   background-image: url(../../../images/heart.svg);
   background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  border: 0;
   width: 22px;
   height: 19px;
   display: inline-block;
@@ -8,4 +11,11 @@
   justify-self: end;
   align-self: center;
   margin-right: 20px;
+  transition: opacity 0.5s;
+}
+
+.card__heart:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.5s;
 }

@@ -1,9 +1,10 @@
-.profile-info__edit-button {
+.profile__edit-button {
   background-image: url(../../../images/eddbutton.svg);
   background-repeat: no-repeat;
-  background-color: black;
-  background-position: center;
-  border: 2px solid #ffffff;
+  background-color: transparent;
+  background-position: center center;
+  background-size: 10px 10px;
+  border: 1px solid #fff;
 
   width: 24px;
   height: 24px;
@@ -12,15 +13,16 @@
   cursor: pointer;
 }
 
-.profile-info__edit-button:hover {
+.profile__edit-button:hover {
   opacity: 0.7;
 }
 
 @media screen and (max-width: 767px) {
-  .profile-info__edit-button {
+  .profile__edit-button {
     width: 18px;
     height: 18px;
     margin-top: 7px;
     align-self: start;
+    background-size: 7.5px 7.5px;
   }
 }
