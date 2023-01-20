@@ -16,5 +16,6 @@
 @media screen and (max-width: 767px) {
   .gallery {
     grid-template-columns: fit-content(282px);
+    padding: calc(36px / 2) 0 calc(67px / 2) 0;
   }
 }
