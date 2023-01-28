@@ -1,0 +1,13 @@
+.popup__preview {
+  max-width: 75vw;
+  max-height: 75vw;
+  border-radius: 0;
+  padding: 0;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__preview {
+    min-width: calc(100% - 80px);
+  }
+}

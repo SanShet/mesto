@@ -28,61 +28,6 @@
             <button class="profile__add-button" type="button"></button>
         </section>
         <section class=" gallery">
-            <div class="card">
-                <img class="card__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
-
-                <h3 class="card__text">Карачаевск</h3>
-                <button class="card__heart" type="button"></button>
-
-
-
-
-            </div>
-
-            <div class="card">
-                <img class="card__image" src="./images/gora-elbrus.jpg" alt="Гора Эльбрус">
-                <h3 class="card__text">Гора Эльбрус</h3>
-                <button class="card__heart" type="button"></button>
-
-
-
-            </div>
-
-            <div class="card">
-                <img class="card__image" src="./images/dombai.jpg" alt="Домбай">
-                <h3 class="card__text">Домбай</h3>
-                <button class="card__heart" type="button"></button>
-
-
-
-            </div>
-
-            <div class="card">
-                <img class="card__image" src="./images/chelny.jpg" alt="Набережные Челны">
-                <h3 class="card__text">Набережные Челны</h3>
-                <button class="card__heart" type="button"></button>
-
-
-
-            </div>
-
-            <div class="card">
-                <img class="card__image" src="./images/kazan1.jpg" alt="Казань">
-                <h3 class="card__text">Казань</h3>
-                <button class="card__heart" type="button"></button>
-
-
-
-            </div>
-
-            <div class="card">
-                <img class="card__image" src="./images/moscow.jpg" alt="Москва">
-                <h3 class="card__text">Москва</h3>
-                <button class="card__heart" type="button"></button>
-
-
-
-            </div>
 
         </section>
 
@@ -91,11 +36,11 @@
         <p class="footer__copyright">© 2022 Mesto Russia</p>
 
     </footer>
-    <div class="popup">
+    <div class="popup popup_edit">
         <div class="popup__container">
             <button class="popup__close-button" type="button"></button>
             <h3 class="popup__title">Редактировать профиль</h3>
-            <form name="popupform" class="popup__form">
+            <form name="edit-popup" class="popup__form">
 
 
                 <input class="popup__value" type="text" placeholder="Введите имя" id="popup-name" name="name">
@@ -109,6 +54,49 @@
         </div>
 
     </div>
+
+    <div class="popup popup_add">
+        <div class="popup__container">
+            <button class="popup__close-button" type="button"></button>
+            <h3 class="popup__title">Новое Место</h3>
+            <form name="add-popup" class="popup__form">
+
+
+                <input class="popup__value" type="text" placeholder="Введите имя" id="image-name" name="name">
+                <input class="popup__value" type="text" placeholder="Введите ссылку" id="image-link" name="link">
+
+
+                <button class="popup__save-button" type="submit">
+                    Создать
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="popup popup_view">
+
+        <div class="popup__preview">
+            <button class="popup__close-button" type="button"></button>
+            <img class="popup__image-view" alt="" src="">
+            <p class="popup__view-text"></p>
+        </div>
+    </div>
+
+    <template class="clone-card">
+        <div class="card">
+            <button class="card__trash" type="button"></button>
+            <img class="card__image" src="" alt="">
+
+            <h3 class="card__text"></h3>
+            <button class="card__heart" type="button"></button>
+
+
+
+
+        </div>
+
+    </template>
     <script src="./scripts/index.js"></script>
 </body>
 
