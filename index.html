@@ -43,9 +43,12 @@
             <form name="edit-popup" class="popup__form">
 
 
-                <input class="popup__value" type="text" placeholder="Введите имя" id="popup-name" name="name">
-                <input class="popup__value" type="text" placeholder="Введите должность" id="popup-job" name="job">
-
+                <input class="popup__value" type="text" placeholder="Введите имя" id="popup-name" name="name"
+                    minlength="2" maxlength="40" required>
+                <span class="popup__span-error popup-name-error"></span>
+                <input class="popup__value" type="text" placeholder="Введите должность" id="popup-job" name="job"
+                    minlength="2" maxlength="200" required>
+                <span class="popup__span-error popup-job-error"></span>
 
                 <button class="popup__save-button" type="submit">
                     Сохранить
@@ -62,8 +65,12 @@
             <form name="add-popup" class="popup__form">
 
 
-                <input class="popup__value" type="text" placeholder="Введите имя" id="image-name" name="name">
-                <input class="popup__value" type="text" placeholder="Введите ссылку" id="image-link" name="link">
+                <input class="popup__value" type="text" placeholder="Введите имя" id="image-name" name="name"
+                    minlength="2" maxlength="30" required>
+                <span class="popup__span-error image-name-error"></span>
+                <input class="popup__value popup__value_type_editlink" placeholder="Введите ссылку" id="image-link"
+                    name="url" type="url" required>
+                <span class="popup__span-error image-link-error"></span>
 
 
                 <button class="popup__save-button" type="submit">
@@ -98,6 +105,7 @@
 
     </template>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/validate.js"></script>
 </body>
 
 </html>

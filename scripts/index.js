@@ -50,6 +50,8 @@ const primaryCards = [
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');
+  document.addEventListener('click', closePopupOverlay);
+  document.addEventListener('keyup', closePopupEsc);
 }
 
 function closePopup(popup) {
@@ -107,6 +109,19 @@ function createCard(title, link) {
   });
   return card;
 }
+
+const closePopupEsc = (evt) => {
+  if (evt.key === 'Escape') {
+    const activePopup = document.querySelector('.popup_opened');
+    closePopup(activePopup);
+  }
+};
+
+const closePopupOverlay = (evt) => {
+  if (evt.target.classList.contains('popup')) {
+    closePopup(evt.target);
+  }
+};
 
 function handleCardFormSubmit(evt) {
   evt.preventDefault();
